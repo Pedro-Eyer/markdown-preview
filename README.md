@@ -17,7 +17,7 @@ Um projeto desenvolvido para visualizar Markdown em tempo real. Essa aplicação
 
 ## 🎨 Demonstração
 
-🔗 [Clique aqui para ver o projeto online](#https://quote-machine-hcti.vercel.app/)
+🔗 [Clique aqui para ver o projeto online](https://quote-machine-hcti.vercel.app/)
 
 ## 🧠 Conceitos Praticados
 
