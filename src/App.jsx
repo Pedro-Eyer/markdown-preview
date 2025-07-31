@@ -35,7 +35,7 @@ function App() {
   const [markdown, setMarkdown] = useState(initialMarkdown)
 
   return (
-    <div>
+    <div className="wrapper">
       <h1>Markdown Previewer</h1>
 
     <div className="container">
