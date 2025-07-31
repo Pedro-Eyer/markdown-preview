@@ -1,9 +1,9 @@
-/* Reset box-sizing */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Body */
+
 body {
   background: linear-gradient(
     135deg,
@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Title */
+
 .wrapper h1 {
   background-color: #4a90e2;
   color: white;
@@ -61,12 +61,12 @@ body {
 .editor-container,
 .preview-container {
   width: 50%;
-  min-width: 0; /* evita overflow */
+  min-width: 0; 
   display: flex;
   flex-direction: column;
 }
 
-/* Labels */
+
 .label-editor,
 .label-preview {
   font-weight: 600;
@@ -77,9 +77,9 @@ body {
   margin-top: 0;
 }
 
-/* Textarea editor */
+
 textarea#editor {
-  width: 100%; /* preencher container pai */
+  width: 100%; 
   height: 400px;
   padding: 15px;
   font-size: 1rem;
@@ -99,7 +99,7 @@ textarea#editor:focus {
 }
 
 #preview {
-  width: 100%; /* preencher container pai */
+  width: 100%; 
   border: 1px solid #ccc;
   padding: 20px;
   background-color: white;
@@ -112,15 +112,13 @@ textarea#editor:focus {
   box-sizing: border-box;
 }
 
-/* Preview h1 estilo */
+
 #preview h1 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 8px;
   margin-top: 0;
 }
 
-
-/* Imagens dentro do preview */
 #preview img {
   max-width: 100%;
   height: auto;
@@ -129,7 +127,6 @@ textarea#editor:focus {
   border-radius: 8px;
 }
 
-/* Footer */
 .footer {
   margin-top: 2rem;
   text-align: center;
@@ -138,15 +135,26 @@ textarea#editor:focus {
   font-style: italic;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%; 
+  }
+
+  .editor-container,
+  .preview-container {
+    width: 100%; 
   }
 
   textarea#editor,
   #preview {
-    width: 100%;
+    width: 100%; 
     height: 300px; 
+  }
+
+  #preview h2 {
+    width: 100%; 
+    text-align: center; 
   }
 }
