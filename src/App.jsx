@@ -38,20 +38,29 @@ function App() {
   return (
     <div className="wrapper">
       <h1>Markdown Previewer</h1>
+      <div className="container">
+        <div className="editor-container">
+          <label htmlFor="editor" className="label-editor">Digite em Markdown aqui:</label>
+          <textarea
+            id="editor"
+            value={markdown}
+            onChange={(e) => setMarkdown(e.target.value)}
+            placeholder="Digite seu markdown aqui..."
+          />
+        </div>
 
-    <div className="container">
-      <textarea
-        id="editor"
-        value={markdown}
-        onChange={(e) => setMarkdown(e.target.value)}
-      />
-      
-
-      <div
-        id="preview"
-        dangerouslySetInnerHTML={{ __html: marked(markdown) }}
-      />
+        <div className="preview-container">
+          <h2 className="label-preview">Texto formatado:</h2>
+          <div
+            id="preview"
+            dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+          />
+        </div>
       </div>
+
+      <footer className="footer">
+        by Dev Eyer
+      </footer>
     </div>
   )
 }
