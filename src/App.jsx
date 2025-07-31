@@ -27,7 +27,8 @@ function exemplo() {
 
 > Este é um blockquote.
 
-![Imagem de exemplo](https://via.placeholder.com/150)
+![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+
 
 **Texto em negrito**
 `
