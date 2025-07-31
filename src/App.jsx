@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { marked } from 'marked'
+import './App.css'
+
 
 marked.setOptions({
   breaks: true,
@@ -36,16 +38,19 @@ function App() {
     <div>
       <h1>Markdown Previewer</h1>
 
+    <div className="container">
       <textarea
         id="editor"
         value={markdown}
         onChange={(e) => setMarkdown(e.target.value)}
       />
+      
 
       <div
         id="preview"
         dangerouslySetInnerHTML={{ __html: marked(markdown) }}
       />
+      </div>
     </div>
   )
 }
